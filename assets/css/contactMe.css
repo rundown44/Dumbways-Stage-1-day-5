@@ -1,0 +1,99 @@
+body {
+    font-family: 'Poppins','sans-serif';
+    background-color: #DCDFE4;
+    margin: 0px;
+} 
+/* navbar styling */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eeebeb;
+    padding: 0px 40px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+}
+
+
+nav img {
+    width: 55px;
+    margin: 10px 50px 0px 0px;
+}
+
+.nav-right a {
+    color: white;
+    border: 1px solid #111727;
+    background-color: #111727;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin-right: 70px;
+    text-align: justify;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* contactMe.html styling */
+
+h1 {
+    margin: 50px auto;
+    width: 350px;
+    text-align: center;
+}
+
+form {
+    width: 500px;
+    margin: 50px auto;
+  
+}
+form div {
+    padding: 10px;
+}
+
+label{
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-top: 15px;
+    box-shadow: #5a5555a1 1px 1px;
+    position: relative;
+}
+
+select {
+    width: 105%;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    color: white;
+    background-color: #111727;
+    border: 1px solid #111727;
+    border-radius: 50px;
+    padding: 5px 35px;
+    position: relative;
+    left: 380px;
+    font-size: 17px;
+}

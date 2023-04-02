@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/myProject.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+        <title>Project</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul style="list-style: none;">
+                    <li>
+                        <a href="index.html"><img src="./assets/img/logo_dumbways.png" alt="logo" id="logo"></a>
+                    </li>
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li ><a href="myProject.html" id="myproject">My Project</a> </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contactMe.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <h1> ADD MY PROJECT </h1>
+            <form class="form">
+                <div class="project">
+                    <label for="project">Project Name</label>
+                    <input type="text" id="project">
+                </div>
+                <div class="date">
+                    <div class="start-date">
+                        <label for="start">Start Date</label>
+                        <input type="date" id="start">
+                    </div>
+                    <div class="end-date">
+                        <label for="end">End Date</label>
+                        <input type="date" id="end" >
+                    </div>
+                </div>
+
+                <div class="description">
+                    <label for="description">Description</label>
+                    <textarea id="description"></textarea>
+                </div>
+
+                <label for="tech">Technologies
+                <div class="tech">
+                    <div>
+                        <input type="checkbox" id="nodejs"> 
+                        <label for="nodejs">Node JS</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="nextjs"> 
+                        <label for="nextjs">Next JS</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="reactjs"> 
+                        <label for="reactjs">React JS</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="typescript"> 
+                        <label for="typescript">TypeScript</label>
+                    </div>
+
+                    <div class="upload">
+                        <label for="upload">Upload Image</label>
+                        <input type="file" id="upload">
+                    </div>
+                    </label>
+                </div>
+
+                <div class="button-submit">
+                    <button>Submit</button>
+                </div>
+            </form>  
+
+        <div class="my-project-detail">
+            <div class="project-detail-title">
+                <h1> MY PROJECT</h1>
+            </div>
+
+            <div class="project-detail">
+                <div class="inner-project">
+                    <div>
+                        <img src="./assets/img/project-img.jpg" alt="project-img">
+                    </div>
+                    
+                    <div class="project-title">
+                        <h3>Dumbways Mobile App - 2023</h3> 
+                    </div>
+
+                    <div class="duration">
+                        <p>Duration : 1 bulan</p> 
+                    </div>
+
+                    <div class="project-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, pariatur sequi.</p>
+                    </div>
+
+                    <div class="logo-tech">
+                        <div class="nodeJS">
+                            <img src="./assets/img/node.js.png" alt="nodeJS">
+                        </div>   
+                        <div class="nextJS">
+                            <img src="./assets/img/next.js.png" alt="nextJS">
+                        </div>
+                        <div class="reactJS">
+                            <img src="./assets/img/react.js.png" alt="reactJS">
+                        </div>
+                        <div class="typescript">
+                            <img src="./assets/img/typescript.png" alt="typescript">
+                        </div>    
+                    </div>
+
+                    <div class="project-button">
+                        <div class="edit">
+                            <button>edit</button>
+                        </div>
+
+                        <div class="delete">
+                            <button>delete</button>
+                        </div>
+                    </div>    
+                </div>
+            </div>    
+        </div>
+
+        
+    </body>
+    <script  src="/assets/js/script.js"></script>
+</html>
