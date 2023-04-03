@@ -167,8 +167,7 @@ textarea {
 /* MY PROJECT */
 
 .my-project-detail {
-    background-color: whitesmoke;
-    padding: 10px 0px;
+    background-color: white;
 }
 
 .project-detail {
@@ -176,7 +175,8 @@ textarea {
     height: auto;
     border: 1px; 
     border-style: solid whitesmoke; 
-    box-shadow: 0 0 10px rgba(85, 83, 83, 0.904);  background-color:white; 
+    box-shadow: 0 0 10px rgba(85, 83, 83, 0.904);
+    background-color:white; 
     border-radius: 2%; 
     margin: 0px 80px;
 }
