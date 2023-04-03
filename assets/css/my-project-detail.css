@@ -1,0 +1,127 @@
+body {
+    font-family: 'Poppins','sans-serif';
+    background-color: #DCDFE4;
+    margin: 0px;
+} 
+/* navbar styling */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eeebeb;
+    padding: 0px 40px;
+    margin: 0px 0px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    width: 55px;
+    margin: 10px 50px 0px 0px;
+}
+
+.nav-right a {
+    color: white;
+    border: 1px solid #111727;
+    background-color: #111727;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin-right: 70px;
+    text-align: justify;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* MAIN PAGE STYLING */
+
+
+h1 {
+    margin: 50px auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.img-text {
+    display: flex;
+    margin: 0px 120px;
+}
+
+.img-text img {
+    width: 650px;
+}
+
+.duration {
+    margin: 20px 0px 70px 70px;
+}
+
+
+.duration{
+    align-items: center;
+}
+
+.duration h3 {
+    margin: 0px;
+}
+
+.duration label {
+    margin-left: 10px;
+}
+
+.calendar,
+.time {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.duration img {
+    display: grid;
+    width: 30px;
+}
+.tech {
+    margin: 40px 0px 0px 70px;
+}
+
+.tech img {
+    width: 30px;
+    height: auto;
+}
+
+.tech-img {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 10px 100px;
+}
+.tech label {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.nodejs,
+.nextjs,
+.reactjs,
+.typescript {
+    display: flex;
+    align-items: center;
+}
+
+.project-desc {
+    display: flex;
+    align-items: center;
+}
+.project-desc p{
+    text-align: justify;
+    margin: 50px 120px;
+}

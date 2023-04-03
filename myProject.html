@@ -25,11 +25,12 @@
         </nav>
 
         <h1> ADD MY PROJECT </h1>
-            <form class="form">
+            <form class="form" onsubmit="getProject(event)">
                 <div class="project">
                     <label for="project">Project Name</label>
                     <input type="text" id="project">
                 </div>
+
                 <div class="date">
                     <div class="start-date">
                         <label for="start">Start Date</label>
@@ -45,28 +46,38 @@
                     <label for="description">Description</label>
                     <textarea id="description"></textarea>
                 </div>
+                
+                <div>
+                    <label for="tech">Technologies</label>
+                    <div class="tech">
+                        <div>
+                            <input type="checkbox" id="nodejs"> 
+                            <label for="nodejs">Node JS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="nextjs"> 
+                            <label for="nextjs">Next JS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="reactjs"> 
+                            <label for="reactjs">React JS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="typescript"> 
+                            <label for="typescript">TypeScript</label>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="tech">
+                <div class="upload">
                     <div>
-                        <input type="checkbox" id="nodejs"> 
-                        <label for="nodejs">Node JS</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="nextjs"> 
-                        <label for="nextjs">Next JS</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="reactjs"> 
-                        <label for="reactjs">React JS</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="typescript"> 
-                        <label for="typescript">TypeScript</label>
-                    </div>
-
-                    <div class="upload">
-                        <label for="upload">Upload Image</label>
+                        <label for="upload" >Upload Image</label>
+                    </div>    
+                    <div class="container">
                         <input type="file" id="upload">
+                    </div>
+                    <div>
+                        <img src="./assets/img/paperclip.svg" alt="clip">
                     </div>
                 </div>
 
@@ -79,15 +90,17 @@
             <div class="project-detail-title">
                 <h1> MY PROJECT</h1>
             </div>
-
+            
             <div class="project-detail">
-                <div class="inner-project">
+                <div class="inner-project" id="contents">
                     <div>
                         <img src="./assets/img/project-img.jpg" alt="project-img">
                     </div>
-                    
+                
                     <div class="project-title">
-                        <h3>Dumbways Mobile App - 2023</h3> 
+                        <a href="myProjectDetail.html">
+                            <h3>Dumbways Mobile App - 2023</h3> 
+                        </a>
                     </div>
 
                     <div class="duration">
@@ -99,34 +112,24 @@
                     </div>
 
                     <div class="logo-tech">
-                        <div class="nodeJS">
                             <img src="./assets/img/node.js.png" alt="nodeJS">
-                        </div>   
-                        <div class="nextJS">
                             <img src="./assets/img/next.js.png" alt="nextJS">
-                        </div>
-                        <div class="reactJS">
                             <img src="./assets/img/react.js.png" alt="reactJS">
-                        </div>
-                        <div class="typescript">
-                            <img src="./assets/img/typescript.png" alt="typescript">
-                        </div>    
-                    </div>
-
+                            <img src="assets/img/typescript.png" alt="typescript">
+                    </div>    
+                    
                     <div class="project-button">
                         <div class="edit">
                             <button>edit</button>
                         </div>
-
+                        
                         <div class="delete">
                             <button>delete</button>
                         </div>
                     </div>    
                 </div>
-            </div>    
-        </div>
-
-        
+            </div>
+        </div>    
     </body>
     <script  src="/assets/js/script.js"></script>
 </html>

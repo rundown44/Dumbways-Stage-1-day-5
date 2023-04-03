@@ -75,7 +75,7 @@ label{
 #project,
 #start,
 #end,
-textarea {
+textarea{
     padding: 10px;
     width: 100%;
     border: 1px solid whitesmoke;
@@ -85,50 +85,21 @@ textarea {
     box-shadow: #5a5555a1 1px 1px;
 }
 
+textarea {
+    resize: none;
+}
+
 .start-date,
 .end-date {
     margin: 0px;
     padding: 0px;
 }
 
-.upload {
-    display: grid;
-    align-items: left;
-    justify-content: left;
-    padding-left: 0px;
-}
-
-.upload input{
-    width: 100%;
-    background-color: yellow;
-    padding: 10px 250px;
-}
-/* throw error */
-
-select {
-    width: 105%;
-}
-
-textarea {
-    resize: none;
-}
-
-.button-submit button{
-    color: white;
-    background-color: #111727;
-    border: 1px solid #111727;
-    border-radius: 50px;
-    padding: 5px 35px;
-    position: relative;
-    left: 380px;
-    font-size: 17px;
-}
 
 .date {
     display: flex;
     justify-content: center;
     align-self: center;
-    
 }
  .start-date {
      margin-right: 25px ;
@@ -163,22 +134,71 @@ textarea {
     width: 20px;
 }
 
+.upload {
+    margin: 0px;
+    padding: 0px;
+}
+#upload {
+    width: 502px;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: #5a5555a1 1px 1px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+
+}
+
+::-webkit-file-upload-button{
+    background-color: grey;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.upload img {
+    position: relative;
+    width: 30px;
+    bottom: 60px;
+    left: 470px;
+}
+
+
+.button-submit button{
+    color: white;
+    background-color: #111727;
+    border: 1px solid #111727;
+    border-radius: 50px;
+    padding: 5px 35px;
+    position: relative;
+    left: 370px;
+    font-size: 17px;
+}
+
+
 
 /* MY PROJECT */
 
 .my-project-detail {
     background-color: white;
+    padding: 30px 0px;
 }
-
+.project-detail h1{
+    margin: 0px auto;
+    width: 350px;
+    text-align: center;
+}
 .project-detail {
     width: 350px; 
     height: auto;
-    border: 1px; 
-    border-style: solid whitesmoke; 
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid whitesmoke; 
     box-shadow: 0 0 10px rgba(85, 83, 83, 0.904);
     background-color:white; 
     border-radius: 2%; 
-    margin: 0px 80px;
+    margin: 50px 80px;
 }
 
 .inner-project {
@@ -194,12 +214,19 @@ textarea {
 
 .project-title{
     height: fit-content; 
+    margin: 0px;
+    padding: 0px;
 }
 
 .project-title h3{
     height: fit-content; 
     margin: 0px;
     padding: 0px;
+}
+
+.project-title a {
+    text-decoration: none;
+    color: black;
 }
 
 .duration {
@@ -221,20 +248,18 @@ textarea {
 
 .logo-tech {
     display: flex;
-    align-items: center;
-    width: 200px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 30px;
     height: auto;
     margin: 20px 0px;
-
 }
 
-.nextJS, 
-.typescript,
-.reactJS,
-.nodeJS {
-    width: 4096px;
+.logo-tech img{
     margin-right: 20px;
 }
+
+
 
 .project-button {
     display: flex;
