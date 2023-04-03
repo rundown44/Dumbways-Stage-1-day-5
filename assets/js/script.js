@@ -76,7 +76,6 @@ function renderBlog() {
     
     for(let i = 0; i < projects.length; i++) {
         document.getElementById("contents").innerHTML += `
-        <div class="project-detail">
             <div class="inner-project" id="contents">
                 <div>
                     <img src="${projects[i].image}" alt="project-img">
@@ -112,11 +111,11 @@ function renderBlog() {
                         <button>delete</button>
                     </div>
                 </div>    
-            </div>
-        </div>
-    </div>`
+            </div>`
     }
 }
+
+// there are still errors at some points
 
 function getDuration(startDate, endDate) {
     const distance = new Date(endDate) - new Date(startDate)
