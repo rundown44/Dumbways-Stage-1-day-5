@@ -192,15 +192,18 @@ textarea {
 .project-detail {
     width: 350px; 
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
     border: 1px solid whitesmoke; 
     box-shadow: 0 0 10px rgba(85, 83, 83, 0.904);
     background-color:white; 
     border-radius: 2%; 
-    margin: 50px 80px;
+    margin: 30px 0px 0px 70px;
 }
 
+.flex-style {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
 .inner-project {
     padding: 20px;
 }
